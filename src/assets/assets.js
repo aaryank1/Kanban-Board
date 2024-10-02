@@ -10,7 +10,7 @@ import low from './Img - Low Priority.svg'
 import medium from './Img - Medium Priority.svg'
 import progress from './in-progress.svg'
 import no_priority from './No-priority.svg'
-import priority_colour from './SVG - Urgent Priority Colour.svg'
+import priority_colour from './SVG - Urgent Priority colour.svg'
 import priority_grey from './SVG - Urgent Priority grey.svg'
 import todo from './To-do.svg'
 
