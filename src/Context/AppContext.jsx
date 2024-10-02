@@ -13,13 +13,16 @@ const AppContextProvider = (props) => {
     useEffect(()=>{
         const checkLocalStorageForGrouping = localStorage.getItem('grouping');
         const checkLocalStorageForOrdering = localStorage.getItem('ordering');
-        if(checkLocalStorageForGrouping && checkLocalStorageForOrdering){
+        if (checkLocalStorageForGrouping) {
             setGrouping(checkLocalStorageForGrouping);
-            setOrdering(checkLocalStorageForOrdering);
+        } else {
+            setGrouping('Status');
         }
-        else{
-            setGrouping('Status')
-            setOrdering('Priority')
+        
+        if (checkLocalStorageForOrdering) {
+            setOrdering(checkLocalStorageForOrdering);
+        } else {
+            setOrdering('Priority');
         }
     })
 
